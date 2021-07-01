@@ -1,0 +1,28 @@
+/**
+    파일명 : Common.css
+    설  명 : 공통 Common css 파일
+
+    수정자      수정일      수정내용 
+    ------      --------    ----------------------------------------------------------
+    kth      21.01.20    최초작성
+*/
+
+/******************************************************************************
+* 조회 버튼
+******************************************************************************/
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,29 @@
+<!--
+    파일명: index.html
+    설  명: 웹 프로그램의 시작점(프로그램 시작 시, 최초 호출되는 HTML 파일)
+
+    수정자      수정일      수정내용
+    ------      --------    ----------------------------------------------------------
+    kth         21.01.15    최초작성
+-->
+<!doctype html>
+<html>
+    <head>
+        <title>SQL-Browser</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- 공통적으로 필요한 css, js 파일 추가되는 영역 -->
+        <script id="include"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // 공통적으로 필요한 css, js 파일 Include
+                $("#include").load("./lib/Include.html");
+                
+                // 프로그램이 시작되면, 처음 사용자에게 보여져야 하는 화면 로딩
+                setTimeout(function(){$("#content").load(FIRST_PAGE());},10);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="content"></div>
+    </body>
+</html>
